@@ -457,6 +457,14 @@ h6 {
     padding-bottom: 4.375rem;
   }
 
+  .swiper-slide__text {
+    font-size: 1.25rem;
+  }
+
+  .swiper-slide__text {
+    line-height: 1.625rem;
+  }
+
   .summer__title {
     font-size: 3.125rem;
   }
@@ -521,12 +529,20 @@ h6 {
     padding-bottom: 1.875rem;
   }
 
+  .swiper-slide__text {
+    font-size: 1rem;
+  }
+
+  .swiper-slide__text {
+    line-height: 1.3125rem;
+  }
+
   .summer__title {
     font-size: 1.875rem;
   }
 
   .summer__text {
-    font-size: 0.625rem;
+    font-size: 0.875rem;
   }
 
   .summer__text {
@@ -754,6 +770,30 @@ h6 {
     }
 }
 
+@supports (font-size: clamp( 1rem , 0.9304347826rem  +  0.347826087vw , 1.25rem )) {
+    .swiper-slide__text {
+      font-size: clamp( 1rem , 0.9304347826rem  +  0.347826087vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.9304347826rem  +  0.347826087vw , 1.25rem )) {
+    .swiper-slide__text {
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 71.875);
+    }
+}
+
+@supports (line-height: clamp( 1.3125rem , 1.2255434783rem  +  0.4347826087vw , 1.625rem )) {
+    .swiper-slide__text {
+      line-height: clamp( 1.3125rem , 1.2255434783rem  +  0.4347826087vw , 1.625rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.3125rem , 1.2255434783rem  +  0.4347826087vw , 1.625rem )) {
+    .swiper-slide__text {
+      line-height: calc(1.3125rem + 0.3125 * (100vw - 20rem) / 71.875);
+    }
+}
+
 @supports (font-size: clamp( 1.875rem , 1.527173913rem  +  1.7391304348vw , 3.125rem )) {
     .summer__title {
       font-size: clamp( 1.875rem , 1.527173913rem  +  1.7391304348vw , 3.125rem );
@@ -766,15 +806,15 @@ h6 {
     }
 }
 
-@supports (font-size: clamp( 0.625rem , 0.4510869565rem  +  0.8695652174vw , 1.25rem )) {
+@supports (font-size: clamp( 0.875rem , 0.7706521739rem  +  0.5217391304vw , 1.25rem )) {
     .summer__text {
-      font-size: clamp( 0.625rem , 0.4510869565rem  +  0.8695652174vw , 1.25rem );
+      font-size: clamp( 0.875rem , 0.7706521739rem  +  0.5217391304vw , 1.25rem );
     }
 }
 
-@supports not (font-size: clamp( 0.625rem , 0.4510869565rem  +  0.8695652174vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.7706521739rem  +  0.5217391304vw , 1.25rem )) {
     .summer__text {
-      font-size: calc(0.625rem + 0.625 * (100vw - 20rem) / 71.875);
+      font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 71.875);
     }
 }
 
