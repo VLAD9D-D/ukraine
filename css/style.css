@@ -219,6 +219,19 @@ h6 {
   display: none;
 }
 
+.footer {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.footer__text {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,14 +338,14 @@ h6 {
 }
 
 .swiper-button-prev {
-  left: 5%;
+  left: 3%;
   -ms-transform: rotate(135deg);
       transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
 
 .swiper-button-next {
-  right: 5%;
+  right: 3%;
   -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -542,7 +555,7 @@ h6 {
   }
 
   .summer__text {
-    font-size: 0.875rem;
+    font-size: 0.625rem;
   }
 
   .summer__text {
@@ -806,15 +819,15 @@ h6 {
     }
 }
 
-@supports (font-size: clamp( 0.875rem , 0.7706521739rem  +  0.5217391304vw , 1.25rem )) {
+@supports (font-size: clamp( 0.625rem , 0.4510869565rem  +  0.8695652174vw , 1.25rem )) {
     .summer__text {
-      font-size: clamp( 0.875rem , 0.7706521739rem  +  0.5217391304vw , 1.25rem );
+      font-size: clamp( 0.625rem , 0.4510869565rem  +  0.8695652174vw , 1.25rem );
     }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.7706521739rem  +  0.5217391304vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.625rem , 0.4510869565rem  +  0.8695652174vw , 1.25rem )) {
     .summer__text {
-      font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 71.875);
+      font-size: calc(0.625rem + 0.625 * (100vw - 20rem) / 71.875);
     }
 }
 
